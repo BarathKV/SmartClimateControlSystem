@@ -24,6 +24,44 @@ This project is an IoT-based climate control system that monitors temperature an
 
 <img src="assets/CD_SCCS.png" alt="drawing" style="width:300px;"/>
 
+## Circuit Connection
+
+| Arduino Uno R3 | ESP8266 - 01 |
+| -------------: | :----------- |
+| RX (Pin 2)     | TX           |
+| TX (Pin 3)     | RX           |
+| GND            | GND          |
+| 3.3v           | VCC          |
+| 3.3v           | CHPD         |
+| None           | GPIO1        |
+| None           | GPIO2        |
+| None           | Reset        |
+
+| Arduino Uno R3 | DHT 11 Sensor |
+| -------------: | :------------ |
+| 5v             | VCC           |
+| GND            | GND           |
+| 2 (Data Pin)   | Data          |
+
+| Arduino Uno R3 | I2C LCD Display |
+| -------------- | --------------- |
+| GND            | GND             |
+| 5v             | VCC             |
+| A4             | SDA             |
+| A5             | SLC             |
+
+| Arduino Uno R3 | SRD-05VDC-SL-C Relay |
+| -------------: | :------------------- |
+| 5v             | VCC                  |
+| GND            | GND                  |
+| 5 (Data Pin)   | Signal               |
+
+| SRD-05VDC-SL-C Relay | Appliance     |
+| -------------------: | :------------ |
+| NO                   | Power +ve     |
+| CC                   | Appliance +ve |
+
+
 ## Block Diagram
 
 <img src="assets/BD_SCCS.png" alt="drawing" style="width:300px;"/>
@@ -72,7 +110,9 @@ This project is an IoT-based climate control system that monitors temperature an
 ## Screenshots
 
 ### Data Visualization
+<!-- TODO: add screenshot of data table -->
 ![Data Table]()
 
 ### Graph View
+<!-- TODO: add screenshot of graphical view -->
 ![Graph View]()

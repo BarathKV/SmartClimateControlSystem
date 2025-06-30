@@ -6,7 +6,7 @@
 #define DHTTYPE DHT11
 #define COLS 16
 #define ROWS 2
-#define DHTPIN 4
+#define DHTPIN 12
 #define RX 2
 #define TX 3
 #define RELAY 5
