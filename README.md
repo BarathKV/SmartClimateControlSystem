@@ -84,12 +84,12 @@ This project is an IoT-based climate control system that monitors temperature an
 
 1. **Arduino Setup**:
    - Upload the `.ino` file to the Arduino Uno.
-   - Connect the DHT11 sensor to the Arduino Uno as per the circuit diagram.
-   - Connect the ESP8266-01 to the Arduino Uno.
+   - Connect the DHT11 sensor to the Arduino Uno as per the circuit connections.
+   - Connect the ESP8266-01 to the Arduino Uno as per the circuit connections.
 
 2. **Server Setup**:
    - Install XAMPP and start Apache and MySQL services.
-   - Place the PHP files in the `htdocs` directory of XAMPP.
+   - Place the `ClimateControl` folder in the `htdocs` directory of XAMPP.
    - Import the provided SQL file into your MySQL database.
    - Update the `dbconn.php` file with your database credentials.
 
@@ -101,18 +101,23 @@ This project is an IoT-based climate control system that monitors temperature an
 
 - **Arduino Libraries**:
   - `DHT.h`: For reading data from the DHT11 sensor.
-  - `ESP8266WiFi.h`: For enabling WiFi communication.
+  - `ESP8266WiFi.h` [by ]: For enabling WiFi communication.
   
 - **Web Libraries**:
-  - [Bootstrap 4.4.1](https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css)
-  - [DataTables](https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css)
+  - [DataTables](https://cdn.datatables.net)
+  - [Tailwindcss](https://tailwindcss.com)
 
 ## Screenshots
 
-### Data Visualization
-<!-- TODO: add screenshot of data table -->
-![Data Table]()
+### Graphical view
 
-### Graph View
-<!-- TODO: add screenshot of graphical view -->
-![Graph View]()
+<img src="assets/graph.png" alt="drawing" style="width:300px;"/>
+
+### Tabular view
+
+<img src="assets/tabular.png" alt="drawing" style="width:300px;"/>
+
+## Contributors
+
+- [Barath K V](https://github.com/BarathKV)
+- [Lalith Abhishek G](https://github.com/LalithAbhishekG)
